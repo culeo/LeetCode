@@ -41,5 +41,5 @@ def find_min_arrow_shots(points):
 
 print find_min_arrow_shots([[10,16], [2,8], [1,6], [7,12]])
 
-def test_find_min_arrow_shots():
+def test_find_min_arrow_shots_1():
     assert 2 == find_min_arrow_shots([[10,16], [2,8], [1,6], [7,12]])
