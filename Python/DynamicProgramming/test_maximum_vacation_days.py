@@ -63,7 +63,7 @@ def max_vacation_days(flights, days):
 print max_vacation_days([[0,1,1],[1,0,1],[1,1,0]], [[1,3,1],[6,0,3],[3,3,3]])
 
 def test_max_vacation_days_1():
-    assert 9 == max_vacation_days([[0,1,1],[1,0,1],[1,1,0]], [[1,3,1],[6,0,3],[3,3,3]])
+    assert 12 == max_vacation_days([[0,1,1],[1,0,1],[1,1,0]], [[1,3,1],[6,0,3],[3,3,3]])
 
 def test_max_vacation_days_2():
     assert 3 == max_vacation_days([[0,0,0],[0,0,0],[0,0,0]], [[1,1,1],[7,7,7],[7,7,7]])
