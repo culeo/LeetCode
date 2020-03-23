@@ -21,15 +21,16 @@ def min_set_size(arr):
             
     https://leetcode.com/problems/reduce-array-size-to-the-half/
     """
-    counts = [count for num, count in collections.Counter(arr).items()]
+    
+    freq = collections.Counter(arr)
 
+    cnt = 0
     ans = 0
-    rc = 0
   
-    for c in counts:
-        rc += c
+    for a, c in freq.most_common():
+        cnt += c
         ans += 1
-        if rc >= len(arr)/2.0: break
+        if cnt >= len(arr)/2.0: break
     
     return ans
 
