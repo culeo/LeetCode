@@ -36,7 +36,6 @@ def find_number_of_LIS(nums):
 
         fl.append(max_l)
         fc.append(count)
-    print fc
     longest = max(fl)
     return sum(fc[i] for i in range(len(fl)) if fl[i] == longest)
 

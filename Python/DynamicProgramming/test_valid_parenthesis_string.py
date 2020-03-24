@@ -36,7 +36,7 @@ def check_valid_string(s):
             f.append(set([v+1 for v in f[i-1]]) |
                      set([v-1 for v in f[i-1] if v > 0]) |
                      f[i-1])
-        print f[i]
+
     return 0 in f[n]
 
 print check_valid_string('(((******))')

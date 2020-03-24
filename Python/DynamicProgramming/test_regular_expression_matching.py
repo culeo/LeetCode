@@ -31,7 +31,7 @@ def is_match(s, p):
 
             elif p[j-1] == '*':
                 f[i][j] = f[i][j-2] or ((s[i-1] == p[j-2] or p[j-2] == '.') and f[i-1][j])
-    print f
+
     return f[-1][-1]
 
 print is_match("abc", ".*")

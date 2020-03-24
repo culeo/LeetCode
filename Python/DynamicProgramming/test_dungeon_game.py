@@ -31,14 +31,10 @@ def calculate_minimum_hp(dungeon):
     if ml == 0: return 0
 
     nl = len(dungeon[0])
-    print ml, nl
-
     f = [[0] * nl for i in range(ml)]
-    print f
 
     for i in range(ml - 1, -1, -1):
         for j in range(nl - 1, -1, -1):
-            print i, j
             if i == ml - 1 and j == nl - 1:
                 f[i][j] = 1 - dungeon[i][j]
             elif i == ml - 1:

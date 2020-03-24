@@ -36,7 +36,6 @@ def find_min_moves(machines):
 
     for i in range(l):
         f[i] = (machines[i] - avg) + f[i-1]
-        print f
         if f[i-1] < 0 and f[i] > 0:
             re = max(re, (abs(f[i-1]) + abs(f[i])))
         else:

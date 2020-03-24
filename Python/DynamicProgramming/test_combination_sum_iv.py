@@ -35,7 +35,6 @@ def combination_sum(nums, target):
         for num in nums:
             if num <= k:
                 f[k] += f[k-num]
-                print f
 
     return f[target]
 

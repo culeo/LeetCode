@@ -36,8 +36,10 @@ def max_a(n):
         f.append(k)
         for i in range(1, k - 3 + 1):
             f[k] = max(f[k], f[i] * (k - i - 1))
-    print f
+
     return f[n]
+
+print max_a(7)
 
 def test_max_a_1():
     assert 9 == max_a(7)

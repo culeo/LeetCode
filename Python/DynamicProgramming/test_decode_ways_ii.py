@@ -28,7 +28,7 @@ def num_decodings(s):
     f.append(0 if s[0] == "0" else 9 if s[0] == "*" else 1)
 
     m = long(1e9 + 7)
-    print m
+
     for i in range(2, len(s) + 1):
         f.append(0)
         if s[i-1] == "*": 
@@ -54,7 +54,6 @@ def num_decodings(s):
                 if num > 9 and num < 27:
                     f[i] = (f[i] + f[i-2]) % m
 
-    print f
     return f[len(s)]
 
 def test_num_decodings_1():

@@ -40,7 +40,6 @@ def rob(nums):
             fa.append(max(nums[i] + fb[i - 2], fa[i - 1]))
             fb.append(max(nums[i] + fb[i - 2], fa[i - 1]))
         else:
-            print i, nums[i], fa, fb
             fa.append(max(nums[i] + fa[i - 2], fa[i - 1]))
             fb.append(max(nums[i] + fb[i - 2], fb[i - 1]))
         

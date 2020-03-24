@@ -37,9 +37,7 @@ def is_match(s, p):
                 f[i][j] = f[i-1][j-1]
             elif p[j-1] == '*':
                 f[i][j] = f[i-1][j-1] or f[i][j-1] or f[i-1][j]
-
-    print f
-
+                
     return f[-1][-1]
 
 print is_match("aab", "c*a*b")
