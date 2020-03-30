@@ -23,7 +23,6 @@ def least_interval(tasks, n):
     if len(tasks) == 0: return 0
 
     cnts = collections.Counter(tasks)
-    print cnts
     sorted_tasks = sorted(cnts, key=cnts.get, reverse=True)
     max_cnt = cnts[sorted_tasks[0]] - 1
     idle_slots = max_cnt * n
